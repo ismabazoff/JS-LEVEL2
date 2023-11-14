@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="assets/styles/reset.css" />
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <title>Калькулятор калории</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Калькулятор калории</h1>
+            </div>
+            <div class="inputs">
+                <div class="addProducts">
+                    <input placeholder="Введите назввание продукта" />
+                    <input placeholder="Введите калорийность" />
+                    <button>Добавить</button>
+                </div>
+                <div class="targetCalories">
+                    <input placeholder="Введите цель по калориям" />
+                    <button>Добавить</button>
+                </div>
+            </div>
+            <div class="list">
+                <div class="listTitle">
+                    <h2>Съедено за день</h2>
+                    <span class="totalCaloriesDay"></span>
+                    <span class="listTitle_calories"></span>
+                    <input
+                        class="filterInput"
+                        placeholder="Фильтр по названию"
+                    />
+                    <button class="sort">Сотрировка по калориям</button>
+                    <button class="deleteAll">Удалить все продукты</button>
+                </div>
+                <div class="content">
+                    <ol class="listItems"></ol>
+                    <div class="chart">
+                        <div class="bar" style="height: 0" data-value="0"></div>
+                        <div class="bar" style="height: 0" data-value="0"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="warningsDailyLimit"></span>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
